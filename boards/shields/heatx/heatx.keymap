@@ -1,24 +1,22 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
 
 / {
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-            /* Right encoder:
-             * CW  → Volume Up
-             * CCW → Volume Down
-             */
+            /* Right encoder: Volume Up/Down */
             sensor-bindings = <
                 &inc_dec_kp C_VOL_UP C_VOL_DN
             >;
 
             bindings = <
-                &kp A  &kp B  &kp C  &kp D
-                &kp E  &kp F  &kp G  &kp H
-                &kp I  &kp J  &kp K  &kp L
-                &kp M  &kp N  &kp O  &kp P
+                &kp A          &kp B          &kp C                &kp D
+                &kp E          &kp F          &kp G                &kp H
+                &kp I          &kp J          &rgb_ug RGB_TOGG     &rgb_ug RGB_EFF
+                &kp M          &kp N          &rgb_ug RGB_BRI      &rgb_ug RGB_HUD
             >;
         };
     };
