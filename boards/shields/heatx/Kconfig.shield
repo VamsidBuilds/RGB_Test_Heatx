@@ -1,0 +1,2 @@
+config SHIELD_HEATX
+    def_bool $(shields_list_contains,heatx)
