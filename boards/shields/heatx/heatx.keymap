@@ -14,9 +14,9 @@
 
             bindings = <
                 &kp A &kp B &kp C &kp D
-                &kp E &kp F &kp G &kp H
-                &kp I &kp J &rgb_ug RGB_TOG &rgb_ug RGB_EFF
-                &kp M &kp N &rgb_ug RGB_BRI &rgb_ug RGB_BRD
+                &kp E &kp F &rgb_ug RGB_TOG &rgb_ug RGB_EFF
+                &kp I &kp J &rgb_ug RGB_HUI &rgb_ug RGB_SAI
+                &kp M &kp N &rgb_ug RGB_BRI &rgb_ug RGB_SPI
             >;
         };
     };
